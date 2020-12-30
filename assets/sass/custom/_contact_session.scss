@@ -1,0 +1,14 @@
+.contact-session {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-image img {
+  width: 14em;
+  border-radius: 50%;
+  margin-left: 1em;
+}
+
+@include breakpoint('<=xsmall') {
+  justify-content: flex-start;
+}
