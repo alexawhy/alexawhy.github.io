@@ -183,8 +183,8 @@ h1.major {
 }
 
 h1.major:after {
-  background-image: -webkit-gradient(linear, left top, right top, from(#375b6d), to(#884564));
-  background-image: linear-gradient(to right, #375b6d, #884564);
+  background-image: -webkit-gradient(linear, left top, right top, from(#375b6d), to(#3e4649));
+  background-image: linear-gradient(to right, #375b6d, #3e4649);
   -webkit-transition: max-width 0.2s ease;
   transition: max-width 0.2s ease;
   border-radius: 0.2em;
@@ -1789,18 +1789,22 @@ button:hover:active:after,
 }
 
 .features section {
-  padding: 3.5em 3em 1em 7em ;
-  width: 50%;
+  padding: 3.5em 3em 1em 3.5em ;
+  width: 20%;
   border-top: solid 1px rgba(255, 255, 255, 0.15);
   position: relative;
 }
 
-.features section:nth-child(-n + 2) {
+.features section:nth-child(-n + 5) {
   border-top-width: 0;
 }
 
-.features section:nth-child(2n) {
+.features section:not(:nth-child(5n+1)) {
   border-left: solid 1px rgba(255, 255, 255, 0.15);
+}
+
+.features section h3 {
+  text-align: center;
 }
 
 .features section .icon {
@@ -2177,7 +2181,7 @@ input[type="checkbox"]:checked + label:before,
 input[type="radio"]:checked + label:before {
   background: #ffffff;
   border-color: #ffffff;
-  color: #884564;
+  color: #3e4649;
   content: '\f00c';
 }
 
@@ -2285,11 +2289,11 @@ input[type="radio"] + label:before {
 }
 
 .wrapper.style3 .icon.major:before {
-  color: #884564;
+  color: #3e4649;
 }
 
 .wrapper.style3-alt .icon.major:before {
-  color: #66344b;
+  color: #272c2d;
 }
 
 /* Image */
@@ -2944,11 +2948,11 @@ table.alt tfoot {
 }
 
 .wrapper.style3 {
-  background-color: #884564;
+  background-color: #3e4649;
 }
 
 .wrapper.style3-alt {
-  background-color: #66344b;
+  background-color: #272c2d;
 }
 
 .wrapper.fullscreen {
@@ -3378,8 +3382,8 @@ body.is-ie #sidebar > .inner {
 }
 
 #sidebar nav a:after {
-  background-image: -webkit-gradient(linear, left top, right top, from(#375b6d), to(#884564));
-  background-image: linear-gradient(to right, #375b6d, #884564);
+  background-image: -webkit-gradient(linear, left top, right top, from(#375b6d), to(#3e4649));
+  background-image: linear-gradient(to right, #375b6d, #3e4649);
   -webkit-transition: max-width 0.2s ease;
   transition: max-width 0.2s ease;
   max-width: 0;
@@ -3460,7 +3464,7 @@ body.is-preload #sidebar nav ul li {
   }
   #sidebar nav a:after {
     background-image: none;
-    background-color: #884564;
+    background-color: #3e4649;
   }
 }
 
