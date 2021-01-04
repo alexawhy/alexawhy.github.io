@@ -22,11 +22,13 @@
 				border-radius: 0;
 				display: block;
 				position: relative;
-				width: 25em;
+				width: 45em;
+				margin: 2em;
 
 				img {
 					border-radius: 0;
 					display: block;
+					object-fit: contain;
 				}
 
 				&:before {
