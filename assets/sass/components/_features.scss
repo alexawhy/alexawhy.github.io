@@ -15,17 +15,25 @@
 		margin: 0 0 _size(element-margin) 0;
 
 		section {
-			@include padding(3em, 3em, (0.5em, 0, 0, 4em));
-			width: 50%;
+			@include padding(3em, 3em, (0.5em, 0, 0, 0.5em));
+			width: 20%;
 			border-top: solid 1px _palette(border);
 			position: relative;
 
-			&:nth-child(-n + 2) {
+			&:nth-child(-n + 5) {
 				border-top-width: 0;
 			}
 
-			&:nth-child(2n) {
+			&:not(:nth-child(5n+1)) {
 				border-left: solid 1px _palette(border);
+			}
+
+			// &:last-child {
+			// 	border-right: solid 1px _palette(border);
+			// }
+
+			h3 {
+				text-align: center;
 			}
 
 			.icon {
